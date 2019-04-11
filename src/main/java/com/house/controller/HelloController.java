@@ -2,6 +2,7 @@ package com.house.controller;
 
 import com.house.entity.Area;
 import com.house.service.AreaService;
+import com.house.util.HttpUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ import java.util.Map;
 @Controller
 public class HelloController {
 
-    Logger logger = LoggerFactory.getLogger(HelloController.class);
+    private static Logger logger = LoggerFactory.getLogger(HelloController.class);
     @Autowired
     private AreaService areaService;
 
